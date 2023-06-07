@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Task Number 7</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 2</header>
+   <main class="tasks">Task Number 7</main>
+      <script>
+         //wwodim dane
+         function getRandomFromRange(min, max) {
+            return Math.random() * (max - min) + min
+         }
+
+         //wyczyslajem dane
+         let RandomNumberMonth = parseInt(getRandomFromRange(1, 13))
+         let randomNumberDay = parseInt(getRandomFromRange(0, 7)) 
+         let SumOfRandom = RandomNumberMonth + randomNumberDay
+
+         document.write(`
+         Рандомний номер місяця: ${RandomNumberMonth}<br>
+         Рандомний номер дня: ${randomNumberDay} <br>
+         CyMMA: ${SumOfRandom}
+         `)
+      </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

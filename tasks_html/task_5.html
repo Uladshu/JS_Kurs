@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 2</header>
+   <main class="tasks">Task Number 5</main>
+      <script>
+         //wwodim dane
+         let A = parseFloat(prompt('Введіть кількість секунд'))
+         //gradation
+         const MinSek = 60
+         const HourSek = 3600
+         
+         //wyczyslajem dane
+         let ResulMin = A / MinSek
+         let ResulHour= A / HourSek
+         document.write(`
+         Задано секунд: ${A} Sec. <br>
+         Хвилини: ${ResulMin.toFixed(2)} Min.<br>
+         Години: ${ResulHour} Hours
+         `)
+      </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

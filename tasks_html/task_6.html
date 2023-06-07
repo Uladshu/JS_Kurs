@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Task Number 6</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 2</header>
+   <main class="tasks">Task Number 6</main>
+      <script>
+         //wwodim dane
+         let QuantityKom = parseInt(prompt('Введіть  кількість Kombinezon dz denim'))
+         let PriceKom = parseFloat(prompt('Введіть вартість Kombinezon dz denim'))
+         let QuantityTSh = parseInt(prompt('Введіть  кількість T-shirt dz barbotka'))
+         let PriceTSh = parseFloat(prompt('Введіть вартість T-shirt dz barbotka'))
+         let QuantitySuk = parseInt(prompt('Введіть  кількість sukienka dz twil'))
+         let PriceSuk = parseFloat(prompt('Введіть вартість sukienka dz twil'))
+         
+         //wyczyslajem dane
+         let TotalPriceKom = QuantityKom * PriceKom
+         let TotalPriceTSh = QuantityTSh * PriceTSh
+         let TotalPriceSuk = QuantitySuk * PriceSuk
+         let CheckAmount = TotalPriceKom + TotalPriceSuk + TotalPriceTSh
+         document.write(`
+         ---------Paragon---------<br>
+         Kombinezon dz denim <br>
+         ${QuantityKom} X ${PriceKom}....${TotalPriceKom}<br><br>
+         T-shirt dz barbotk <br>
+         ${QuantityTSh} X ${PriceTSh}....${TotalPriceTSh}<br><br>
+         sukienka dz twil<br>
+         ${QuantitySuk} X ${PriceSuk}....${TotalPriceSuk}<br><br>
+         Загальна вартість: ${CheckAmount}<br>
+         `)
+      </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

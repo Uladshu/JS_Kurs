@@ -1,0 +1,49 @@
+body{
+   background-color:black;
+   color: white;
+}
+.container{
+   margin:  5% auto;
+   padding: 0 10%;
+}
+
+.name-header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 1vh;
+   font-size: 3vh;
+}
+.card-list{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+   grid-gap: 5%;
+
+}
+.card-task{
+   display: flex;
+   flex-direction: column;
+   font-size: 3vh;
+   &__task-text{
+   padding-top: 5%;
+   margin-bottom: 2em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   }
+   &__card-task-btn{
+      background-color: rgb(28, 187, 144);  
+      color: black;
+      border-radius: 2em;
+      padding: 0 0.5em;
+      margin: auto auto 0 auto;
+
+   }
+}
+.footer-information{
+   font-size: 3vh;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+
+}

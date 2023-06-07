@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 2</header>
+   <main class="tasks">Task Number 2</main>
+      <script>
+         //wwodim dane
+         let A = parseFloat(prompt('Введіть вартість од. товару'))
+         let C = parseInt(prompt('Введіть вартість од. товару'))
+         //podatok
+         const B = 0.05
+         
+         //wyczyslajem dane
+         let TotalPrice = C * A
+         let Taxes = TotalPrice * B
+         let TPWithTaxes = TotalPrice - Taxes
+         document.write(`
+         Загальна вартість: ${TotalPrice}<br>
+         З урахуванням податків: ${TPWithTaxes}
+         `)
+      </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>
