@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 3</header>
+   <main class="tasks">Task Number 4 <br></main>
+   <script>
+
+   //З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+
+
+
+   //wwodim dane
+   let ageMan = parseInt(prompt('Ведіть вік людини'))
+      //wyczyslajem i wywodim dane
+   const startAgeOfSchol = 8
+   const startAgeOfStudent = 17
+   const startAgeOfJob = 21
+   const startAgeOfPension = 68
+   if (ageMan < startAgeOfSchol)
+      document.write(`Вітаю Ви швидше за все ходите до дитячого садка`)
+      else
+      if (ageMan >=startAgeOfSchol && ageMan < startAgeOfStudent)
+      document.write(`Вітаю Ви швидше за все Ходите до школи`)
+         else
+         if (ageMan >= startAgeOfStudent && ageMan <startAgeOfJob)
+         document.write ('Вітаю Ви швидше за все студент')
+            else
+            if (ageMan >= startAgeOfJob && ageMan < startAgeOfPension)
+               document.write('Швидше за все ви вже працюєте')
+               else
+               if (ageMan > startAgeOfPension)
+                  document.write('Швидше за все ви пенсіонер')
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 3</header>
+   <main class="tasks">Task Number 7 <br></main>
+   <script>
+
+   //З клавіатури вводиться номер дня тижня. Вивести на екран назву дня. понеділок вівторок середа четвер п'ятниця субота неділя
+    //зима весна літо Осінь
+
+
+
+   //wwodim dane
+   let numberDayOfTheMonth = parseInt(prompt('введіть номер місяця'))
+      //wyczyslajem i wywodim dane
+   switch (numberDayOfTheMonth){ 
+      case 12: 
+      case 1: 
+      case 2: resaultCoupleOfYears = 'ви вибрали зиmy'
+      break
+      case 3:
+      case 4:
+      case 5: resaultCoupleOfYears = 'ви вибрали веснy '
+      break
+      case 6: 
+      case 7: 
+      case 8: resaultCoupleOfYears = 'ви вибрали літо'
+      break
+      case 9: 
+      case 10: 
+      case 11: resaultCoupleOfYears = 'ви вибрали Осінь'
+      break
+      default:
+      resaultCoupleOfYears = 'У році лише 12 місяців'
+      break
+   }
+   document.write(` ${resaultCoupleOfYears}`)
+
+
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

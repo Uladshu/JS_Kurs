@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 3</header>
+   <main class="tasks">Task Number 1 <br></main>
+   <script>
+
+   //Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+
+
+   //wwodim dane
+   let firstGuessedNumber = parseInt(prompt('Спробуйте відгадати число від одного до п яти це ваша перша з двох спроб  '))
+   let secondGuessedNumber = parseInt(prompt('це ваша друга і остання спроба вгадати число'))
+      //Generirujem Radmone czislo
+   function getRandomFromRange(min, max) {
+         var randomNumber = Math.floor (Math.random()*(max-min+1))+min
+         return randomNumber
+      }
+      let randomNumber = getRandomFromRange(1, 5)
+      //wyczyslajem i wywodim dane
+   if (firstGuessedNumber === randomNumber || secondGuessedNumber === randomNumber)
+      document.write(`Вітаю Ви вгадали це було число ${randomNumber} `)
+      else
+      document.write(`На жаль Ви не вгадали це було число ${randomNumber}`)
+
+
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

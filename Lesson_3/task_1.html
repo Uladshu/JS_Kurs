@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 3</header>
+   <main class="tasks">Task Number 1 <br></main>
+   <script>
+
+   //З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або вивести, що кількість однакова.
+
+   //wwodim dane
+   let FirstChildName = prompt('Введіть имя первого ребёнка')
+   let SecondChildName = prompt('Введіть имя вtоpго ребёнка')
+   let FirstBebyCandy = parseInt(prompt(`Введіть kilkisT конфет ${FirstChildName}`))
+   let SecondBebyCandy = parseInt(prompt(`Введіть kilkisT конфет ${SecondChildName}`))
+   //wyczyslajem dane
+   if (FirstBebyCandy > SecondBebyCandy)
+      document.write(`більше цукерок у ${FirstChildName}`)
+      else
+         if (FirstBebyCandy === SecondBebyCandy)
+         document.write(`кількість цукерок у дітей однакова`)
+         else
+         document.write(`більше цукерок у ${ SecondChildName }`)
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

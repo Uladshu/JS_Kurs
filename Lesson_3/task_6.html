@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 3</header>
+   <main class="tasks">Task Number 6 <br></main>
+   <script>
+
+   //З клавіатури вводиться номер дня тижня. Вивести на екран назву дня. понеділок вівторок середа четвер п'ятниця субота неділя
+
+
+
+
+   //wwodim dane
+   let numberDayOfTheWeek = parseInt(prompt('введіть номер дня тижня'))
+      //wyczyslajem i wywodim dane
+   switch (numberDayOfTheWeek){ 
+      case 1: resaultNumberDayOfTheWeek = 'понеділок'
+      break
+      case 2: resaultNumberDayOfTheWeek = 'вівторок '
+      break
+      case 3: resaultNumberDayOfTheWeek = 'середа'
+      break
+      case 4: resaultNumberDayOfTheWeek = 'четвер'
+      break
+      case 5: resaultNumberDayOfTheWeek = 'п`ятниця'
+      break
+      case 6: resaultNumberDayOfTheWeek = 'субота'
+      break
+      case 7: resaultNumberDayOfTheWeek = 'неділя'
+      break
+      default:
+      resaultNumberDayOfTheWeek = 'у тижні лише 7 днів'
+      break
+   }
+   document.write(`ви вибрали ${resaultNumberDayOfTheWeek}`)
+
+
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

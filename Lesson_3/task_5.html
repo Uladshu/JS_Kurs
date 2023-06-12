@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 3</header>
+   <main class="tasks">Task Number 5 <br></main>
+   <script>
+
+   //З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+
+
+
+
+   //wwodim dane
+   let categoryOfDriverLicense = prompt('Ведіть вашу категорію прав A, B або C ')
+      //wyczyslajem i wywodim dane
+   switch (categoryOfDriverLicense){
+      case 'A': 
+      case 'a': resaultCategoryLicense = 'мотоцикл'
+      break
+      case 'C': 
+      case 'c': resaultCategoryLicense = 'вантажний автомобіль '
+      break
+      case 'B':  
+      case 'b': resaultCategoryLicense = 'легковий автомобіль'
+      break
+      default:
+      resaultCategoryLicense = 'невідома категорія';
+      break;
+   }
+   document.write(`Ви можете використовувати ${resaultCategoryLicense}`)
+
+
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>
