@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 5</header>
+   <main class="tasks">Task Number 11 <br></main>
+   <script>
+   //Задача 11. Знайти суму 5 непарних чисел, що знаходяться між заданими користувачем числами.
+   //ВВодим критерии
+   let starttNumberFrom = parseInt(prompt('число від'))
+   let endNumberTo = parseInt(prompt('число до'))
+   let sumOfPairedNumbersz = 0
+   let stopCount = 0
+   //вычисляем
+   for(i=starttNumberFrom;i<=endNumberTo;i++){
+      //ищим непарные числа и суммируем их
+      if(i%2!==0){
+      sumOfPairedNumbersz+=i
+      stopCount++
+      //контролируем что бы их количество не было больше 5
+      if (stopCount === 5)
+      break
+      }
+   }
+   //выводим
+   document.write(`${sumOfPairedNumbersz}`)
+   
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

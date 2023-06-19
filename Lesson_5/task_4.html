@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 5</header>
+   <main class="tasks">Task Number 13 <br></main>
+   <script>
+      //Морський бій. Комп’ютер випадково розташовує одиночний корабель на полі розміром N*M. Маючи К снарядів користувач намагається потопити корабель. 
+   //распологаем корабли
+   let position_Y_Axis = Math.floor(Math.random()*(3-1+1))+1
+   let position_X_Axis = Math.floor(Math.random() * (3 - 1 + 1)) + 1
+   //Количество снарядов (попыток)
+   let numberOfShells = 4
+   //
+   for (i=0; i < 4; i++){
+         let user_Y_Axis = parseInt(prompt('введіть координату висоти - ось (Y)'))
+         let user_X_Axis = parseInt(prompt('введіть координату широти - ось (X)'))
+         if (position_X_Axis === user_X_Axis && position_Y_Axis === user_Y_Axis){
+      alert ("Вітаю Ви вбили корабель")
+      break
+      }
+      else{
+         numberOfShells = numberOfShells - 1
+         alert(`Bи не потрапили у вас залишилося ${numberOfShells} снарядів `)
+      }
+   }
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>
