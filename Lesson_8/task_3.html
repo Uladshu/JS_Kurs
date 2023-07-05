@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 8</header>
+   <main class="tasks">Task Number 3 <br></main>
+   <script>
+   //Задача 3. Дано масив імен учнів.З’ясувати скільки разів зустрічається ім’я «Іван».
+      //вводим данные
+      let namePerson = ["Олександр", "Ірина", "Олена", "Іван", "Володимир", "Юлія", "Михайло", "Наталія", "Іван"]
+      let numberNameIvan = 0
+      //З’ясувати скільки разів зустрічається ім’я "Іван"
+      for (let i = 0; i < namePerson.length; i++) {
+         if (namePerson[i] === "Іван")
+            numberNameIvan++
+      }
+      document.write(`разів зустрічається ім’я = ${numberNameIvan}`);
+   </script>
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

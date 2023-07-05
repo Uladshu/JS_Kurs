@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 5</header>
+   <main class="tasks">Task Number 1 <br></main>
+   <!-- Дано масив, який містить оцінки з К предметів. Знайти середній бал і з’ясувати до якої категорії він відноситься
+   (відмінник, двійочник (має хоча би одну двійку), хорошист (оцінки добре і відмінно), трійочник(є хоча би одна трійка)). -->
+   <script>
+      //wwodim danyje
+   let grades = [12,12,12,10,8,10,12,12,12,12]
+   let numberOfSchoolSubjects = grades.length
+   let sumGrades = 0
+   let category
+      //summa ocenok
+   for (let i = 0; i < grades.length; i++) {
+      sumGrades+=grades[i]
+   }
+      //srednia ocenok
+   let averageGrades = sumGrades/numberOfSchoolSubjects
+      //opredeliajem kotigoriu
+   for (let i = 0; i < numberOfSchoolSubjects; i++) {
+      if (grades[i] === 2) {
+      category = `двійочник`
+      break
+      }
+      else if (grades[i] === 3) {
+         category = `трійочник`
+         break }
+   }
+   if (!category){
+   if (averageGrades >= 11) {
+         category = `Відмінник`
+      }
+      else if (averageGrades >= 8 && averageGrades <= 10) {
+         category = `Хорошист`
+      }
+      else category = `Інша категорія`
+   }
+   document.write(`${category}`)
+   
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

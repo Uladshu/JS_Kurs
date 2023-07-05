@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 8</header>
+   <main class="tasks">Task Number 5 <br></main>
+   <!-- Дано послідовність оцінок учня. Підрахувати кількість:
+   1) двійок
+   2) кількість хороших оцінок (добре, відмінно);
+   3) кількість оцінок, які нижче середнього. -->
+
+   <script>
+   let studentGrades = [2,8,5,6,5,3,9,2,5,4,12,5,4,3,9,2,9]
+   let count1 = 0
+   let count2 = 0
+   let count3 = 0
+   //количиство двоек
+   for (let i = 0; i < studentGrades.length; i++) {
+      if(studentGrades[i]===2)
+      count1++
+   }
+   document.write(`двійок - ${count1}<p>`)
+
+   //кількість хороших оцінок (добре, відмінно);
+   for (let i = 0; i < studentGrades.length; i++) {
+      if(studentGrades[i]>6)
+      count2++
+   }
+   document.write(`кількість хороших оцінок - ${count2}<P>`)
+
+   //кількість оцінок, які нижче середнього.
+   for (let i = 0; i < studentGrades.length; i++) {
+         if (studentGrades[i] <= 6)
+            count3++
+      }
+      document.write(`кількість оцінок, які нижче середнього - ${count3}`)
+   
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>

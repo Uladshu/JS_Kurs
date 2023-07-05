@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="name-header">Homework Lesson 8</header>
+   <main class="tasks">Task Number 4 <br></main>
+   <!-- Дано послідовність номерів автомобілів. Підрахувати кількість номерів, які :
+   • починаються на букву «А»;
+   • перша і остання літери співпадають;
+   • складаються з більше ніш 7 символів; -->
+   <script>
+   //вводим данные
+   let registrationNumberCar = ["AB12303","XY98798","AB123CA", "XY987ZA", "KL4586MK", "OW321PO", "FG6594HJ", "VQ789LK", "DM543TR"] //8 sht.
+   let count1 = 0
+   let count2 = 0
+   let count3 = 0
+   
+   //починаються на букву «А»;
+   for (let i = 0; i < registrationNumberCar.length; i++) {
+      if(registrationNumberCar[i][0] == "A")
+      count1++
+   }
+   document.write(`Кількість номерів, які починаються на букву 'А': ${count1} <p>`)
+   
+   //Pерша і остання літери співпадають;
+   for (let i = 0; i < registrationNumberCar.length; i++) {
+         if (registrationNumberCar[i][0] == registrationNumberCar[i][registrationNumberCar[i].length - 1])
+            count2++
+      }
+   document.write(`Кількість номерів, перша і остання літери співпадають: ${count2} <p>`)
+   
+   //складаються з більше ніш 7 символів
+   for (let i = 0; i < registrationNumberCar.length; i++) {
+      if (registrationNumberCar[i][7] !== undefined )
+      count3++
+   }
+   document.write(`Кількість номерів, складаються з більше ніш 7 символів: ${count3} <p>`)
+   
+
+   </script>
+
+   <footer class="footer-information">
+      <div class="central-info">Made by Uladzimir</div>
+   </footer>
+</body>
+
+</html>
